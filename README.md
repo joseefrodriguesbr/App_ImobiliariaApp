@@ -23,17 +23,15 @@ Aplicativo de imobiliária para plataforma iOS com SwiftUI desenvolvido no X-Cod
 
 ✅ ZStack: Usado para sobrepor views
 
-✅ ScrollView: Usado na DetalheImovelView para permitir que o conteúdo (descrição, características) seja rolado, especialmente quando excede o tamanho da tela.✅ 
+✅ ScrollView: Usado na DetalheImovelView para permitir que o conteúdo (descrição, características) seja rolado, especialmente quando excede o tamanho da tela
 
-✅ List: Usado na ListaImoveisView para exibir o conjunto de imóveis de forma eficiente e estruturada, aproveitando recursos como rolagem otimizada.
+✅ List: Usado na ListaImoveisView para exibir o conjunto de imóveis de forma eficiente e estruturada, aproveitando recursos como rolagem otimizada
 
-✅ Spacer: Usado para empurrar elementos e criar espaço flexível (Ex: centralizar o título no CustomNavigationBar).
+✅ Spacer: Usado para empurrar elementos e criar espaço flexível (Ex: centralizar o título no CustomNavigationBar)
 
-✅ Button: Usado para ações claras (Ex: Botão "Entrar" na LoginView, e o próprio botão "Voltar" dentro do CustomNavigationBar).
+✅ Button: Usado para ações claras (Ex: Botão "Entrar" na LoginView, e o próprio botão "Voltar" dentro do CustomNavigationBar)
 
-✅ NavigationLink: Usado para iniciar a transição para uma nova view na pilha de navegação (Ex: Passar de uma linha da List para a DetalheImovelView).
-
-✅ TextField / SecureField: Usados para entrada de texto pelo usuário (Ex: "Nome de Usuário" e "Senha" na LoginView).
+✅ TextField / SecureField: Usados para entrada de texto pelo usuário (Ex: "Nome de Usuário" e "Senha" na LoginView)
 
 ✅ Picker: Usado na ListaImoveisView com o estilo .menu para permitir a seleção de opções de ordenação ("Preço" e "Quartos"), funcionando como um dropdown.
 
