@@ -46,7 +46,54 @@ let mockImoveis: [Imovel] = [
         imagensDetalhe: ["studio_pinheiros_det1", "studio_pinheiros_det2",  "studio_pinheiros_det3"],
         descricao: "Perfeito para quem busca praticidade. Prédio novo com serviços pay-per-use e lazer na cobertura."
     ),
-]
+    Imovel(
+        id: 4,
+        titulo: "Apartamento de 2 Quartos perto do Parque",
+        localizacao: "Vila Mariana, SP",
+        preco: 750000.00,
+        quartos: 2,
+        banheiros: 2,
+        area: 75,
+        imagemMiniatura: "ap_vm_thumb",
+        imagensDetalhe: ["ap_vm_det1"],
+        descricao: "Imóvel em localização privilegiada, a poucos metros de área verde. Condomínio com lazer básico."
+    ),
+    Imovel(
+        id: 5,
+        titulo: "Loft Industrial com Pé Direito Duplo",
+        localizacao: "Pinheiros, SP",
+        preco: 1100000.00,
+        quartos: 1,
+        banheiros: 2,
+        area: 90,
+        imagemMiniatura: "loft_ph_thumb",
+        imagensDetalhe: ["loft_ph_det1", "loft_ph_det2"],
+        descricao: "Design moderno, espaço aberto e conceito minimalista. Ideal para jovens executivos."
+    ),
+    Imovel(
+        id: 6,
+        titulo: "Sítio com Nascente e Casa de Hóspedes",
+        localizacao: "Teresópolis, RJ",
+        preco: 950000.00,
+        quartos: 5,
+        banheiros: 4,
+        area: 400,
+        imagemMiniatura: "sitio_tr_thumb",
+        imagensDetalhe: ["sitio_tr_det1", "sitio_tr_det2"],
+        descricao: "Propriedade rural com vasto terreno, paz e natureza. Perfeito para refúgio de fim de semana."
+    ),
+    Imovel(
+        id: 7,
+        titulo: "Apartamento Econômico e Funcional",
+        localizacao: "Cachambi, RJ",
+        preco: 290000.00,
+        quartos: 2,
+        banheiros: 1,
+        area: 60,
+        imagemMiniatura: "ap_eco_thumb",
+        imagensDetalhe: ["ap_eco_det1"],
+        descricao: "Bom estado de conservação, condomínio familiar. Excelente custo-benefício."
+    )]
 
 let mockUsuarios: [Usuario] = [
     Usuario(nomeDeUsuario: "Cliente", senha: "123"),

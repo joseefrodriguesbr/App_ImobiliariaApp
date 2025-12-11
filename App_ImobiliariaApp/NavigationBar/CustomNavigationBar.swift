@@ -55,7 +55,7 @@ struct CustomNavigationBar: View {
         CustomNavigationBar(onBackAction: {}, title: "Voltar ao Login", showBackButton: true)
             .border(Color.gray)
 
-        // Exemplo 2: Com Ação Padrão (agora funcionando)
+        // Exemplo 2: Com Ação Padrão
         CustomNavigationBar(title: "Voltar Padrão", showBackButton: true)
             .border(Color.gray)
         
