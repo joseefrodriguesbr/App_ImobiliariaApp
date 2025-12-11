@@ -29,23 +29,21 @@ Aplicativo de imobiliária para plataforma iOS com SwiftUI desenvolvido no X-Cod
 
 ### Componentes reutilizáveis (3 Arquivos)
 
-    CustomNavigationBar.swift
-    CarrosselImagensView.swift 
-    FeatureBadge.swift 
+    - CustomNavigationBar.swift
+    - CarrosselImagensView.swift 
+    - FeatureBadge.swift 
 
 ### Views (4 Arquivos)
 
-    LoginView.swift
-
-    LinhaImovelView.swift
-
-    ListaImoveisView.swift
-
-    DetalheImovelView.swift
+    - LoginView.swift
+    - LinhaImovelView.swift
+    - ListaImoveisView.swift
+    - DetalheImovelView.swift
+    - ContentView.swift
 
 ### App (1 Arquivo)
 
-    App_ImobiliariaApp.swift
+    - App_ImobiliariaApp.swift
 
 ## 🛠️ IDE
 - **X-Code**
