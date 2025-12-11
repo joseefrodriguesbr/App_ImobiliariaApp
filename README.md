@@ -11,7 +11,7 @@ jose.rodrigues@pg.inatel.br, jose.e.f.rodrigues.br@gmail.com
 Aplicativo de imobiliária para plataforma iOS com SwiftUI desenvolvido no X-Code
 
 ### Requisitos atendidos:
-✅ O app deve implementa a arquitetura declarativa vista nas aulas (Tipo dedados -> SubViews (Models) -> View Final)
+✅ O app deve implementa a arquitetura declarativa vista nas aulas (Tipo de dados -> SubViews (Models) -> View Final)
 
 ✅  O app contém autenticação e uma tela de login
 
@@ -44,6 +44,30 @@ Aplicativo de imobiliária para plataforma iOS com SwiftUI desenvolvido no X-Cod
 ### App (1 Arquivo)
 
 - App_ImobiliariaApp.swift
+
+## 📌 Detalhamento da solução
+
+#### 📂 Estrutura de pastas do projeto
+```
+📦 App_ImobiliariaApp
+ ┣📂Carousel                        # Carrossel de imagens
+ ┃ ┗📜CarrosselImagensView.swift   
+ ┣📂Grid                           # Listagem e detalhamento dos anúncios
+ ┃ ┣📜DetalheImovelView.swift
+ ┃ ┣📜FeatureBadge.swift
+ ┃ ┣📜LinhaImovelView.swift   
+ ┃ ┗📜ListaImoveisView.swift  
+ ┣📂Login                          # Tela de login
+ ┃ ┗📜LoginView.swift 
+ ┣📂Model                          # Mocks e tipos de dados
+ ┃ ┣📜DataSourceMock.swift
+ ┃ ┣📜Imovel.swift  
+ ┃ ┗📜Usuario.swift 
+ ┣📂NavigationBar                  # Barra de navegação do aplicativo
+ ┃ ┗📜CustomNavigationBar.swift            
+ ┣📜App_ImobiliariaAppApp.swift    
+ ┗📜ContentView.swift             
+```
 
 ## 🛠️ IDE
 - **X-Code**
