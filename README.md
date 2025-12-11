@@ -18,6 +18,39 @@ Aplicativo de imobiliária para plataforma iOS com SwiftUI desenvolvido no X-Cod
 ## 📌 Imagens do projeto 
 <img style="margin-right: 30px" src="./Tela1.png" width="900px" alt="Imagem 1"/><br>  
 
+## 📌 Organização do projeto
+Aplicativo de imobiliária para plataforma iOS com SwiftUI desenvolvido no X-Code
+
+### Models (3 Arquivos)
+
+    Imovel.swift
+
+    Usuario.swift
+
+    DataSourceMock.swift
+
+### Componentes reutilizáveis (3 Arquivos)
+
+    CustomNavigationBar.swift
+
+    CarrosselImagensView.swift (Nova SubView separada)
+
+    FeatureBadge.swift (Nova SubView separada)
+
+### Views (4 Arquivos)
+
+    LoginView.swift
+
+    LinhaImovelView.swift
+
+    ListaImoveisView.swift
+
+    DetalheImovelView.swift
+
+### App (1 Arquivo)
+
+    App_ImobiliariaApp.swift
+
 ## 🛠️ IDE
 - **X-Code**
 
