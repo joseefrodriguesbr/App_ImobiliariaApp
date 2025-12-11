@@ -42,18 +42,17 @@ Aplicativo de imobiliária para plataforma iOS com SwiftUI desenvolvido no X-Cod
 ✅ Image: Usado para exibir gráficos:
 
     - Imagens estáticas e miniaturas (conteúdo presente em Assets.xcassets).
-
-    - Ícones do sistema (SF Symbols) através de Image(systemName: "...") (Ex: house.fill na logo, chevron.left na navegação, e os ícones de FeatureBadge).
+    
+    - Ícones do sistema (SF Symbols) através de Image(systemName: "...") (Ex: house.fill na logo, chevron.left na navegação, e os ícones de FeatureBadge).]
+    
 
 ✅ Divider: Usado para separar visualmente as seções de conteúdo na DetalheImovelView.
 
-
 ✅ CustomNavigationBar: Substitui a barra de navegação padrão com comportamento personalizado.
-
 
 ✅ FeatureBadge: Usado para exibir características do imóvel (quartos, banheiros, área) de forma modular.
 
-CarrosselImagensView: (Assumido) Usado para exibir as imagens de detalhes do imóvel.
+✅ CarrosselImagensView: Usado para exibir as imagens de detalhes do imóvel.
 
 ## 📌 Imagens do projeto 
 <img style="margin-right: 30px" src="./Tela1.png" width="900px" alt="Imagem 1"/><br>  
