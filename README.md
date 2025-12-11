@@ -29,9 +29,8 @@ Aplicativo de imobiliária para plataforma iOS com SwiftUI desenvolvido no X-Cod
 
 ### Componentes reutilizáveis (3 Arquivos)
 
-    - CustomNavigationBar.swift
-    
-    - CarrosselImagensView.swift
+- CustomNavigationBar.swift
+- CarrosselImagensView.swift
     
     - FeatureBadge.swift 
 
