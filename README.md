@@ -11,7 +11,7 @@ jose.rodrigues@pg.inatel.br, jose.e.f.rodrigues.br@gmail.com
 Aplicativo de imobiliária para plataforma iOS com SwiftUI desenvolvido no X-Code
 
 ### Requisitos atendidos:
-✅ O app deve implementa a arquitetura declarativa vista nas aulas (Tipo dedados -> SubViews (Models) -> View Final;
+✅ O app deve implementa a arquitetura declarativa vista nas aulas (Tipo dedados -> SubViews (Models) -> View Final)
 
 ✅  O app contém autenticação e uma tela de login
 
