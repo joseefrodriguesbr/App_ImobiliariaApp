@@ -10,10 +10,50 @@ jose.rodrigues@pg.inatel.br, jose.e.f.rodrigues.br@gmail.com
 ## 📌 Implementação
 Aplicativo de imobiliária para plataforma iOS com SwiftUI desenvolvido no X-Code
 
-### Requisitos atendidos:
+### Requisitos atendidos e recursos empregados:
 ✅ O app deve implementa a arquitetura declarativa vista nas aulas (Tipo de dados -> SubViews (Models) -> View Final)
 
-✅  O app contém autenticação e uma tela de login
+✅ O app contém autenticação e uma tela de login
+
+✅ NavigationStack: Permite que o aplicativo se mova entre as telas (LoginView -> ListaImoveisView -> DetalheImovelView)
+
+✅ VStack: Usado para empilhar elementos verticalmente
+
+✅ HStack: Usado para empilhar elementos horizontalmente
+
+✅ ZStack: Usado para sobrepor views
+
+✅ ScrollView: Usado na DetalheImovelView para permitir que o conteúdo (descrição, características) seja rolado, especialmente quando excede o tamanho da tela.✅ 
+
+✅ List: Usado na ListaImoveisView para exibir o conjunto de imóveis de forma eficiente e estruturada, aproveitando recursos como rolagem otimizada.
+
+✅ Spacer: Usado para empurrar elementos e criar espaço flexível (Ex: centralizar o título no CustomNavigationBar).
+
+✅ Button: Usado para ações claras (Ex: Botão "Entrar" na LoginView, e o próprio botão "Voltar" dentro do CustomNavigationBar).
+
+✅ NavigationLink: Usado para iniciar a transição para uma nova view na pilha de navegação (Ex: Passar de uma linha da List para a DetalheImovelView).
+
+✅ TextField / SecureField: Usados para entrada de texto pelo usuário (Ex: "Nome de Usuário" e "Senha" na LoginView).
+
+✅ Picker: Usado na ListaImoveisView com o estilo .menu para permitir a seleção de opções de ordenação ("Preço" e "Quartos"), funcionando como um dropdown.
+
+✅ Text: Usado extensivamente para títulos, rótulos, preços (imovel.precoFormatado), descrições e o nome de usuário logado.
+
+✅ Image: Usado para exibir gráficos:
+
+    - Imagens estáticas e miniaturas (conteúdo presente em Assets.xcassets).
+
+    - Ícones do sistema (SF Symbols) através de Image(systemName: "...") (Ex: house.fill na logo, chevron.left na navegação, e os ícones de FeatureBadge).
+
+✅ Divider: Usado para separar visualmente as seções de conteúdo na DetalheImovelView.
+
+
+✅ CustomNavigationBar: Substitui a barra de navegação padrão com comportamento personalizado.
+
+
+✅ FeatureBadge: Usado para exibir características do imóvel (quartos, banheiros, área) de forma modular.
+
+CarrosselImagensView: (Assumido) Usado para exibir as imagens de detalhes do imóvel.
 
 ## 📌 Imagens do projeto 
 <img style="margin-right: 30px" src="./Tela1.png" width="900px" alt="Imagem 1"/><br>  
