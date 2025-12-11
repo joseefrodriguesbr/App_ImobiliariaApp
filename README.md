@@ -27,15 +27,15 @@ Aplicativo de imobiliária para plataforma iOS com SwiftUI desenvolvido no X-Cod
 
 ✅ List: Usado na ListaImoveisView para exibir o conjunto de imóveis de forma eficiente e estruturada, aproveitando recursos como rolagem otimizada
 
-✅ Spacer: Usado para empurrar elementos e criar espaço flexível (Ex: centralizar o título no CustomNavigationBar)
+✅ Spacer: Usado para empurrar elementos e criar espaço flexível
 
 ✅ Button: Usado para ações claras (Ex: Botão "Entrar" na LoginView, e o próprio botão "Voltar" dentro do CustomNavigationBar)
 
-✅ TextField / SecureField: Usados para entrada de texto pelo usuário (Ex: "Nome de Usuário" e "Senha" na LoginView)
+✅ TextField / SecureField: Usados para entrada de texto pelo usuário
 
 ✅ Picker: Usado na ListaImoveisView com o estilo .menu para permitir a seleção de opções de ordenação ("Preço" e "Quartos"), funcionando como um dropdown.
 
-✅ Text: Usado extensivamente para títulos, rótulos, preços (imovel.precoFormatado), descrições e o nome de usuário logado.
+✅ Text: Usado extensivamente para títulos, rótulos, preços, descrições e o nome de usuário logado.
 
 ✅ Image: Usado para exibir gráficos:
 
