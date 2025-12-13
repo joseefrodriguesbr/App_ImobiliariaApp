@@ -70,7 +70,7 @@ Aplicativo de imobiliária para plataforma iOS com SwiftUI desenvolvido no X-Cod
 - CarrosselImagensView.swift
 - FeatureBadge.swift 
 
-### Views (5 Arquivos)
+### Views (6 Arquivos)
 
 - LoginView.swift
 - LinhaImovelView.swift
