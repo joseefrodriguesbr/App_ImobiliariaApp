@@ -8,8 +8,12 @@ import SwiftUI
 
 struct CustomNavigationBar: View {
     @Environment(\.dismiss) var dismiss
-
+    
+    // Ação para o botão de voltar/logout
     var onBackAction: (() -> Void)? = nil
+    
+    // Ação para o botão de créditos
+    var onInfoAction: (() -> Void)? = nil
 
     var title: String
     var showBackButton: Bool = true
@@ -18,11 +22,11 @@ struct CustomNavigationBar: View {
         HStack {
             if showBackButton {
                 Button {
-                    // usado para Logout na ListaImoveisView
+                    // Executa a ação de voltar
                     if let action = onBackAction {
                         action()
                     } else {
-                        dismiss() // Botao volta na tela de detalhes
+                        dismiss()
                     }
                 } label: {
                     Image(systemName: "chevron.left")
@@ -39,7 +43,14 @@ struct CustomNavigationBar: View {
             
             Spacer()
             
-            if showBackButton {
+            // Exibe o botão de créditos
+            if let infoAction = onInfoAction {
+                Button(action: infoAction) {
+                    Image(systemName: "info.circle")
+                        .imageScale(.large)
+                        .foregroundColor(.blue)
+                }
+            } else if showBackButton {
                 Color.clear.frame(width: 25)
             }
         }
@@ -51,12 +62,12 @@ struct CustomNavigationBar: View {
 
 #Preview {
     VStack {
-        // Exemplo 1: Com Logout Action
-        CustomNavigationBar(onBackAction: {}, title: "Voltar ao Login", showBackButton: true)
+        // Exemplo otão de Créditos
+        CustomNavigationBar(onInfoAction: {}, title: "Com Créditos", showBackButton: true)
             .border(Color.gray)
-
-        // Exemplo 2: Com Ação Padrão
-        CustomNavigationBar(title: "Voltar Padrão", showBackButton: true)
+        
+        // Exemplo Padrão
+        CustomNavigationBar(title: "Sem Créditos", showBackButton: true)
             .border(Color.gray)
         
         Spacer()

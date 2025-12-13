@@ -8,7 +8,6 @@
 
 import SwiftUI
 
-// 1. Definição do Enum para as Opções de Ordenação
 enum SortOption: String, CaseIterable, Identifiable {
     case none = "Padrão"
     case priceAscending = "Preço (Menor)"
@@ -22,26 +21,22 @@ struct ListaImoveisView: View {
     var usuarioLogado: String
     @Binding var estaAutenticado: Bool
     
-    // Lista original de imóveis
     let imoveis: [Imovel] = mockImoveis
     
-    // 2. Estado para armazenar a opção de ordenação selecionada
     @State private var selectedSortOption: SortOption = .none
     
-    // 3. Propriedade Computada para retornar a lista ordenada
+    // Estado Para controlar a exibição do popup (sheet)
+    @State private var showingCredits = false
+    
     var sortedImoveis: [Imovel] {
         switch selectedSortOption {
         case .none:
-            // Retorna a lista original sem alteração
             return imoveis
         case .priceAscending:
-            // Ordena por preço (do menor para o maior)
             return imoveis.sorted { $0.preco < $1.preco }
         case .priceDescending:
-            // Ordena por preço (do maior para o menor)
             return imoveis.sorted { $0.preco > $1.preco }
         case .rooms:
-            // Ordena por número de quartos (do maior para o menor)
             return imoveis.sorted { $0.quartos > $1.quartos }
         }
     }
@@ -49,16 +44,19 @@ struct ListaImoveisView: View {
     var body: some View {
         VStack(spacing: 0) {
             
-            // Custom Navigation Bar (Ação de Logout)
             CustomNavigationBar(
                 onBackAction: {
                     self.estaAutenticado = false
+                },
+                // abre o sheet creditos
+                onInfoAction: {
+                    self.showingCredits = true
                 },
                 title: "Olá, \(usuarioLogado)",
                 showBackButton: true
             )
             
-            // 4. Picker (Combo) de Ordenação
+            // Picker (Combo) de Ordenação
             HStack {
                 Text("Ordenar por:")
                     .font(.subheadline)
@@ -69,7 +67,7 @@ struct ListaImoveisView: View {
                         Text(option.rawValue).tag(option)
                     }
                 }
-                .pickerStyle(.menu) // Estilo de menu para parecer um combo
+                .pickerStyle(.menu)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 
                 Spacer()
@@ -77,9 +75,9 @@ struct ListaImoveisView: View {
             .padding(.horizontal)
             .padding(.vertical, 8)
             
-            // 5. Lista Usando a Propriedade Ordenada
+            // Lista Usando a Propriedade Ordenada
             List {
-                ForEach(sortedImoveis) { imovel in // << Usando sortedImoveis
+                ForEach(sortedImoveis) { imovel in
                     NavigationLink(destination: DetalheImovelView(imovel: imovel, usuarioLogado: usuarioLogado, estaAutenticado: $estaAutenticado)) {
                         LinhaImovelView(imovel: imovel)
                     }
@@ -87,6 +85,10 @@ struct ListaImoveisView: View {
             }
             .listStyle(.plain)
             .navigationBarBackButtonHidden(true)
+        }
+        //  Exibe a CreditosView quando showingCredits é true
+        .sheet(isPresented: $showingCredits) {
+            CreditosView()
         }
     }
 }
